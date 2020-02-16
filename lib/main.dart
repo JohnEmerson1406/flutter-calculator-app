@@ -77,7 +77,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
       num1 = 0.0;
       num2 = 0.0;
-      _output = "0";
+      operand = "";
     } else {
 
       _output = _output + buttonText;
