@@ -8,7 +8,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.orange,
+        primarySwatch: Colors.pink,
       ),
       home: MyHomePage(title: 'Calculator'),
     );
@@ -54,8 +54,13 @@ class _MyHomePageState extends State<MyHomePage> {
         child: new Column(children: <Widget>[
 
           new Container(
+            alignment: Alignment.centerRight,
+            padding: new EdgeInsets.symmetric(
+              vertical: 24.0,
+              horizontal: 12.0
+            ),
             child: new Text("0", style: new TextStyle(
-              fontSize: 36.0,
+              fontSize: 48.0,
               fontWeight: FontWeight.bold
             ),)),
 
