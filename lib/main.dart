@@ -25,6 +25,18 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+
+
+  Widget buildButton() {
+    return new Expanded(
+        child: new MaterialButton(
+          child: new Text("1"),
+            onPressed: () => {},
+            color: Colors.blueGrey,
+            textColor: Colors.white,
+        ),
+    );
+  }
   
 
   @override
@@ -43,22 +55,13 @@ class _MyHomePageState extends State<MyHomePage> {
             child: new Divider(),
           ),
 
-          new Row(
-            children: [
-              new Expanded(
-                child: new MaterialButton(
-                  child: new Text("1"),
-                    onPressed: () => {},
-                    color: Colors.blueGrey,
-                    textColor: Colors.white,
-                ),
-            ),
-          ],
-          )
-
-        ],)
-
-      )
-    );
+          new Row(children: [
+            buildButton(),
+            buildButton(),
+            buildButton(),
+            buildButton() 
+          ])
+        ],
+      )));
   }
 }
