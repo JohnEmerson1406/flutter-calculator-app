@@ -78,7 +78,17 @@ class _MyHomePageState extends State<MyHomePage> {
       num1 = 0.0;
       num2 = 0.0;
       _output = "0";
+    } else {
+
+      _output = _output + buttonText;
+
     }
+
+    print(_output);
+
+    setState(() {
+      output = double.parse(_output).toStringAsFixed(2);
+    });
 
   }
 
